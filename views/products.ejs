@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('./partials/head.ejs')%>
+</head>
+<body>
+    <header>
+        <%- include('./partials/header.ejs')%>    
+    </header>
+    <div class="path">
+        <h5>Home > products</h5>
+    </div>
+    <section class="products">
+        <div class="products_title">
+            <h2>Cheirs</h2>
+            <a href="/new_product"><button><i class="fa-solid fa-plus"></i>Добавить продукт</button></a>
+        </div>
+    <div class="list">
+        <%
+            data.forEach( item => {
+
+        %>
+        <div class="product_item">
+            <div>
+                <span><%=item.discount%>%</span>
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <img src="<%=item.pictureURL%>" alt="product_img">
+            <h4><%=item.name%></h4>
+            <h4><%=item.price%> $</h4>
+            <i class="fa-solid fa-ellipsis" ></i>
+            <button class="add_button"><i class="fa-solid fa-plus"></i></button>
+            <div class="modal_window">
+                <a href="/edit_product/<%=item._id%>"><button id="edit" class="edit_button">Редактировать</button></a>
+                <a href="/delete/<%= item._id %>" class="delete_link"><button class="delete_button" >Удалить</button></a>
+            </div>
+        </div>
+       <%
+        });
+        %>
+        
+        
+    </div>
+    </section>
+    <script src="./script/products.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.7/axios.min.js"></script>
+    <script src="./script/delete.js"></script>
+
+</body>
+</html>

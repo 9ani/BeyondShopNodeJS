@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('./partials/head.ejs')%>
+</head>
+<body>
+    <header>
+        <%- include('./partials/header.ejs')%>    
+    </header>
+    <div class="path">
+        <h5>Home > Modern Chair</h5>
+    </div>
+    <div class="product">
+        <div class="product-info">
+            <div class="product-icons">
+                <span class="discount">25%</span>
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <img src="./img/product_img.png" alt="product_img">
+        </div>
+        <div class="product-details">
+            <h2>Modern Chair</h2>
+            <h3>$250</h3>
+            <a href="/new_product" ><i class="fa-solid fa-plus"></i> Add Product</a>
+        </div>
+        <img id="more" src="./img/more.svg" alt="more">
+        <div class="modal_window">
+            <button class="edit_button">Edit</button>
+            <button class="delete_button">Delete</button>
+        </div>
+    </div>
+</body>
+</html>

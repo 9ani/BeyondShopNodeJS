@@ -1,0 +1,131 @@
+.products_title{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 46px;
+    margin-bottom: 50px;
+}
+.products_title button{
+    width: 220px;
+height: 51px;
+    border-radius: 15px;
+background: #FE6769;
+border: none;
+color: #FFF;
+font-size: 16px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+.products_title h2{
+    font-size: 32px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+.products_title button i{
+    margin-right: 10px;
+    }
+.products{
+    padding: 50px 50px;
+}
+
+.product_item{
+    width: 320px;
+display: flex;
+flex-direction: column;
+border-radius: 15px;
+background: #EDEDED;
+padding: 25px 25px 50px 25px;
+justify-content: center;
+text-align: center;
+margin-left: 100px;
+margin-bottom: 50px;
+
+}
+a{
+    text-decoration: none;
+}
+.product_item div span{
+    width: 47px;
+height: 31px;
+    border-radius: 5px;
+background: #FE6769;
+color: #FFF;
+font-size: 16px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+text-align: center;
+padding-top: 5px;
+}
+.product_item div{
+    display: flex;
+    justify-content: space-between;
+}
+.list{
+    display: flex;
+    flex-wrap: wrap;    
+
+}
+.product_item div i{
+  font-size: 30px;
+}
+.product_item h4{
+    margin-top: 20px;
+}
+.fa-ellipsis{
+    position:absolute;
+margin-left: 13.5%;
+margin-top: 23%;
+font-size: 20px;
+
+}
+.fa-ellipsis:hover{
+    cursor: pointer;
+}
+.add_button{
+    border-radius: 50%;
+    width: 70px;
+height: 70px;
+background-color: #FE6769;
+border: none;
+position: absolute;
+margin-top: 25%;
+margin-left: 5%;
+}
+.product_item button i{
+    font-size: 40px;
+    color: white;
+}
+.modal_window button {
+    display: none;
+    width: 183px;
+    height: 40px;
+    border: none;
+    background: #F8F8F8;
+}
+
+.modal_window button {
+    background: #FD0000;
+    color: white;
+}
+#edit{
+    background: white;
+    color: black;
+}
+
+.modal_window.show_modal_window button {
+    display: block;
+}
+
+.modal_window {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    margin-left: 5.5%;
+    margin-top: 28%;
+}
+.product_item img{
+    height: 271px;
+}

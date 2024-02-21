@@ -1,0 +1,40 @@
+.edit_product{
+    display: flex;
+    flex-direction: column;
+    width: 695px;
+height: 523px;
+gap: 20px;
+margin-left: 40px;
+margin-top: 50px;
+}
+.edit_product input{
+    border-radius: 15px;
+border: 1px solid #000;
+background: #FFF;
+color: rgba(0, 0, 0, 0.32);
+font-family: Inter;
+font-size: 18px;
+width: 618px;
+height: 50px;
+padding-left: 15px;
+}
+.edit_product button{ 
+    border-radius: 15px;
+background: #FE6769;
+width: 608px;
+height: 50px;
+flex-shrink: 0;
+color: #FFF;
+
+font-family: Inter;
+font-size: 20px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+margin-left: 10px;
+}
+.edit_product h2{
+    font-size: 25px;
+    margin-bottom: 15px;
+
+}

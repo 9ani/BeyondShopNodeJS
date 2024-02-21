@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('./partials/head.ejs')%>
+</head>
+<body>
+    <header>
+        <%- include('./partials/header.ejs')%>    
+    </header>
+    <div class="path">
+        <h5>Home > new product</h5>
+    </div>
+    <form class="add_product" action="/new_product" method="POST">
+        <h2>Добавить товар</h2>
+        <input type="text" placeholder="Название продукта" name="name">
+        <input type="text" placeholder="Цена" name="price">
+        <input type="text" placeholder="Скидка" name="discount">
+        <input type="text" placeholder="URL картинки" name="pictureURL">
+        <button type="submit">Добавить продукт</button>
+
+    </form>
+</body>
+</html>

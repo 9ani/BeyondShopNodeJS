@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('./partials/head.ejs')%>
+    
+</head>
+<body>
+    <header>
+        <%- include('./partials/header.ejs')%>    
+    </header>
+    <div class="path">
+        <h5>Home > edit product</h5>
+    </div>
+    <form class="edit_product" action="/edit_product" method="POST">
+        <h2>Редактирование товара</h2>
+        <input type="hidden" name="id" value="<%=data._id%>">
+        <input type="text" placeholder="Название продукта" value="<%=data.name%>" name="name">
+        <input type="text" placeholder="Цена" value="<%=data.price%>" name="price">
+        <input type="text" placeholder="Скидка" value="<%=data.discount%>" name="discount">
+        <input type="text" placeholder="URL картинки" value="<%=data.pictureURL%>" name="pictureURL">
+        <button>Сохранить изменения</button>
+
+    </form>
+</body>
+</html>
